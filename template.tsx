@@ -9,7 +9,7 @@ interface Iprops extends IBaseProps {
 interface Istate {
 }
 
-class Template extends React.Component<Iprops, Istate> {
+class {{template}} extends React.Component<Iprops, Istate> {
   public state = {
   }
 
@@ -22,4 +22,4 @@ class Template extends React.Component<Iprops, Istate> {
   }
 }
 
-export default Template;
+export default {{template}};
