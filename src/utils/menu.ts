@@ -11,24 +11,21 @@ import { getLocalStorage } from './utils';
 console.log(getLocalStorage('storeMenu'));
 const database: any = [
   {
-    id: 8,
-    name: '店家管理',
-    route: '',
+    id: 1,
+    name: '菜单',
+    icon:'home',
     bpid: 0,
     mpid: 0,
     authority: ['create', 'delete', 'edit', 'view'],
-    level: 0,
-    order: 0,
   },
   {
-    id: 9,
-    name: '店家列表',
-    route: '/store/store',
-    bpid: 8,
-    mpid: 8,
+    id: 2,
+    name: '菜单2',
+    route: '/index/index',
+    bpid: 1,
+    mpid: 1,
     authority: ['create', 'delete', 'edit', 'view'],
-    level: 0,
-    order: 0,
+
   },
 ];
 // console.log(database)

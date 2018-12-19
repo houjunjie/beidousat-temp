@@ -2,19 +2,19 @@ import React from 'react'
 // import PropTypes from 'prop-types'
 import { Upload, Modal } from 'antd';
 
-interface Iprops {
+interface Props {
   url: string,
   folder: string,
   api: string,
   handleChange: (url: string) => void
 }
-interface Istate {
+interface State {
   fileList: any,
   previewVisible: boolean,
   previewImage: string
 }
 
-class UploadFile extends React.Component<Iprops, Istate>{
+class UploadFile extends React.Component<Props, State>{
   public state = {
     fileList: this.props.url ? [{
       size: 1,

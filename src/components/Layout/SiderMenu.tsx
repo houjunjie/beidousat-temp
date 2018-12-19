@@ -1,10 +1,7 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
-// import { config } from '@/utils'
 import styles from './index.less'
 import Menus from '@/components/Layout/Menus'
-
-interface Iprops {
+interface Props {
   menu: any[],
   siderFold: boolean,
   location: any,
@@ -14,7 +11,7 @@ interface Iprops {
 
 const SiderMenu = ({
   siderFold, location, navOpenKeys, changeOpenKeys, menu,
-}: Iprops) => {
+}: Props) => {
   const menusProps = {
     menu,
     siderFold,
@@ -25,7 +22,7 @@ const SiderMenu = ({
   return (
     <div>
       <div className={styles.logo}>
-        <img alt="logo" src={require('../../logo_w.png')} />
+      <img alt="logo" src={require('../../logo_w.png')} />
       </div>
       <Menus {...menusProps} />
     </div>

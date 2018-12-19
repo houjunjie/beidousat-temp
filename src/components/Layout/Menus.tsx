@@ -8,7 +8,7 @@ import styles from './index.less'
 
 const { SubMenu } = Menu
 let openKeysFlag = false
-interface Iprops {
+interface Props {
   menu: any[],
   darkTheme?: any,
   siderFold: boolean,
@@ -19,7 +19,7 @@ interface Iprops {
 
 const Menus = ({
   siderFold, darkTheme, navOpenKeys, changeOpenKeys, menu, location,
-}: Iprops) => {
+}: Props) => {
   // 生成树状
   const menuTree = arrayToTree(menu.filter(_ => Number(_.mpid) !== -1), 'id', 'mpid')
   const levelMap = {}

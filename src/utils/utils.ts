@@ -2,8 +2,7 @@
 import _ from 'lodash'
 import { routerRedux } from 'dva/router'
 import ExportJsonExcel from 'js-export-excel'
-// import * as lodash from 'lodash'
-// import * as  from 'jsrsasign'
+
 /* eslint no-useless-escape:0 */
 const reg = /(((^https?:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?)$/g
 
@@ -13,7 +12,6 @@ export function isUrl (path: string) {
 
 // 判断浏览器是否支持 hasLocalSotrage
 const hasLocalSotrage = function () {
-  // return window.Storage && window.localStorage && window.localStorage instanceof Storage
   return window.localStorage && window.localStorage instanceof Storage
 }
 // 设置cookie

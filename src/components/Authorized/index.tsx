@@ -4,14 +4,14 @@ import menu from '@/utils/menu';
 import withRouter from 'umi/withRouter';
 import { connect } from 'dva';
 
-interface Iprops {
+interface Props {
   authority: string,
   children: ReactNode,
   location: any,
   noAuthComponent?: any
 }
 
-const Authorized: React.SFC<Iprops> = ({ children, authority, location, noAuthComponent }) => {
+const Authorized: React.SFC<Props> = ({ children, authority, location, noAuthComponent }) => {
   let current
   for (let index in menu) {
     if (menu[index].route && pathToRegexp(menu[index].route).exec(location.pathname)) {

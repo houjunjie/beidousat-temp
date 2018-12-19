@@ -1,11 +1,8 @@
 import * as React from 'react'
 import classnames from 'classnames';
-// import PropTypes from 'prop-types'
 import { Menu, Icon, Popover, Layout } from 'antd'
-// import './Header.less'
 import styles from './Header.less'
 import { getLocalStorage } from '@/utils/utils';
-// import Menus from './Menu'
 
 const { SubMenu } = Menu
 
@@ -13,8 +10,6 @@ const Header = ({
   logout, switchSider, siderFold,
 }: any) => {
   const handleClickMenu = (e: any) => {
-    // e.key === 'logout' && logout();
-    // e.key === 'switch' &&  (window.location.href = '/#/login');
     switch (e.key) {
       case 'logout':
         logout();
@@ -29,16 +24,6 @@ const Header = ({
   }
   const SystemAdmin = getLocalStorage('SystemAdmin')
   const name = SystemAdmin ? SystemAdmin.name: ''
-  // const menusProps = {
-  //   menu,
-  //   siderFold: false,
-  //   darkTheme: false,
-  //   isNavbar,
-  //   handleClickNavMenu: switchMenuPopover,
-  //   location,
-  //   navOpenKeys,
-  //   changeOpenKeys,
-  // }
   return (
     <Layout.Header className={styles.header}>
       <div

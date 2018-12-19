@@ -1,17 +1,17 @@
 import React from 'react'
-import classnames from 'classnames'
+import classnames from 'classnames';
 // import PropTypes from 'prop-types'
 import Loader from '@/components/Loader/Loader'
 import styles from './Page.less'
 
-interface Iprops {
+interface Props {
   className?: string,
   children?: any,
   loading?: boolean,
   inner?: boolean
 }
 
-export default class Page extends React.Component<Iprops> {
+export default class Page extends React.Component<Props> {
   public render () {
     const {
       className, children, loading = false, inner = false,

@@ -1,0 +1,22 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "dist/**/*.js",
+      "node_modules/**/*.ts"
+    ]
+  },
+  "jsRules": {},
+  "rules": {
+      "arrow-parens": ["ban-single-arg-parens"],
+      "interface-name": false,
+      "object-literal-sort-keys": false,
+      "no-console": false,
+      "space-before-function-paren": false,
+      "max-classes-per-file": [false],
+      "no-var-requires": false
+  },
+  "rulesDirectory": []
+}

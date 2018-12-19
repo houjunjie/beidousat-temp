@@ -3,15 +3,15 @@ import React, { Component } from 'react';
 import { Alert } from 'antd';
 import styles from 'components/Player/index.less';
 
-interface Iprops {
+interface Props {
   visible: boolean,
   url: string,
   onCancel: any,
 }
-interface Istate {
+interface State {
   isError: boolean
 }
-class Player extends Component<Iprops, Istate> {
+class Player extends Component<Props, State> {
   public state = {
     isError: false,
   }

@@ -11,15 +11,6 @@ export const model = {
     },
   },
 }
-// interface Ipagination {
-//   showSizeChanger: boolean,
-//   showQuickJumper: boolean,
-//   showTotal: string,
-//   current: number,
-//   total: number,
-//   pageSize: number
-// }
-
 export const pageModel = modelExtend(model, {
 
   state: {
@@ -51,8 +42,3 @@ export const pageModel = modelExtend(model, {
 
 })
 
-
-// export default {
-//   model,
-//   pageModel,
-// }

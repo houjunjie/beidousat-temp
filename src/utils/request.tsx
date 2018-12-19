@@ -1,12 +1,11 @@
 /* global window */
 import axios from 'axios'
-// import qs from 'qs'
-// import jsonp from 'jsonp'
 import * as _ from 'lodash';
 import * as pathToRegexp from 'path-to-regexp'
 import { message } from 'antd'
 import { getLocalStorage } from './utils';
 import NProgress from 'nprogress';
+
 import 'nprogress/nprogress.css'
 // import { YQL, CORS } from './config'
 axios.defaults.headers.common['Content-Type'] = 'application/json;charset=UTF-8'

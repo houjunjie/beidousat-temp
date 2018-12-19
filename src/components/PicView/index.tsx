@@ -1,17 +1,17 @@
 import * as React from 'react';
 import { Modal } from 'antd';
 import classnames from './index.less';
-interface Iprops {
+interface Props {
   src: string
   styles?: any
 }
 
-interface Istate {
+interface State {
   bigSrc: string,
   visible: boolean
 }
 
-class PicView extends React.PureComponent<Iprops, Istate> {
+class PicView extends React.PureComponent<Props, State> {
   state = {
     bigSrc: this.props.src,
     visible: false

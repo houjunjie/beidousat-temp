@@ -77,11 +77,11 @@ export const RenderFormItem = ({ item, styles = '', layout = defaultFormItemLayo
       ],
     }]
  */
-interface Iprops extends FormComponentProps {
+interface Props extends FormComponentProps {
   items: IItem[],
   layout?: Ilayout,
 }
-class FormModal extends React.Component<Iprops> {
+class FormModal extends React.Component<Props> {
   render() {
     // items格式即为上文配置的表单项
     const { items, layout = defaultFormItemLayout, form: { getFieldDecorator } } = this.props
