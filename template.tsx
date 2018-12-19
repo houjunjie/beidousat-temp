@@ -1,17 +1,17 @@
 import * as React from 'react';
 import { IBaseProps } from '@/interfaces/common';
 
-interface Iprops extends IBaseProps {
+interface Props extends IBaseProps {
 }
 
-interface Istate {
+interface State {
 }
 
-class {{template}} extends React.Component<Iprops, Istate> {
-  state:Istate = {
+class {{template}} extends React.Component<Props, State> {
+  state:State = {
   }
 
-  public render() {
+  render() {
     return (
       <React.Fragment>
         component
